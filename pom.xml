@@ -16,6 +16,9 @@
 
   <modules>
     <module>vcc-parent</module>
+    <module>vcc-api</module>
+    <module>vcc-vmware-vix-impl</module>
+    <module>vcc-vmware-esx-impl</module>
   </modules>
 
   <scm>
