@@ -1,0 +1,44 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <parent>
+    <groupId>net.java.dev.virtual-computer-control</groupId>
+    <artifactId>vcc-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>vcc-parent/</relativePath>
+  </parent>
+    
+  <artifactId>vcc-pom</artifactId>
+  <packaging>pom</packaging>
+
+  <name>Virtual Computer Control Aggregator Project</name>
+  <url>https://virtual-computer-control.dev.java.net/</url>
+
+  <modules>
+    <module>vcc-parent</module>
+  </modules>
+
+  <scm>
+    <connection>scm:svn:https://svn.dev.java.net/svn/virtual-computer-control/trunk/</connection>
+    <developerConnection>scm:svn:https://svn.dev.java.net/svn/virtual-computer-control/trunk/</developerConnection>
+    <url>https://virtual-computer-control.dev.java.net/source/browse/virtual-computer-control/trunk/</url>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>display-info</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
