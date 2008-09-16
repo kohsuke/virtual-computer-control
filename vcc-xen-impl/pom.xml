@@ -8,21 +8,19 @@
         <relativePath>../vcc-parent/</relativePath>
     </parent>
 
-    <artifactId>vcc-vmware-esx-impl</artifactId>
+    <artifactId>vcc-xen-impl</artifactId>
     <packaging>jar</packaging>
 
-    <name>Virtual Computer Control VMware ESX implementation</name>
+    <name>Virtual Computer Control Xen implementation</name>
     <url>https://virtual-computer-control.dev.java.net/</url>
 
-    <description>The VMware ESX implementation of vcc-api</description>
+    <description>The Xen implementation of vcc-api</description>
 
     <scm>
-        <connection>scm:svn:https://svn.dev.java.net/svn/virtual-computer-control/trunk/vcc-vmware-esx-impl/
-        </connection>
-        <developerConnection>scm:svn:https://svn.dev.java.net/svn/virtual-computer-control/trunk/vcc-vmware-esx-impl/
+        <connection>scm:svn:https://svn.dev.java.net/svn/virtual-computer-control/trunk/vcc-xen-impl/</connection>
+        <developerConnection>scm:svn:https://svn.dev.java.net/svn/virtual-computer-control/trunk/vcc-xen-impl/
         </developerConnection>
-        <url>
-            https://virtual-computer-control.dev.java.net/source/browse/virtual-computer-control/trunk/vcc-vmware-esx-impl/
+        <url>https://virtual-computer-control.dev.java.net/source/browse/virtual-computer-control/trunk/vcc-xen-impl/
         </url>
     </scm>
 
