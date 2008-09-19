@@ -10,7 +10,7 @@ import net.java.dev.vcc.ConnectionProvider;
  * Time: 20:01:41
  * To change this template use File | Settings | File Templates.
  */
-public class VixManager implements ConnectionProvider {
+public class VixConnectionProvider implements ConnectionProvider {
     public boolean acceptsUrl(String url) {
         return false;  //To change body of implemented methods use File | Settings | File Templates.
     }
