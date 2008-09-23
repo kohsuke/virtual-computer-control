@@ -3,19 +3,19 @@ package net.java.dev.vcc.impl.vmwarevix;
 import net.java.dev.vcc.Connection;
 import net.java.dev.vcc.ConnectionProvider;
 
+import java.util.regex.Pattern;
+
 /**
- * Created by IntelliJ IDEA.
- * User: user
- * Date: 16-Sep-2008
- * Time: 20:01:41
- * To change this template use File | Settings | File Templates.
+ * The ConnectionProvider for VMware virtual computers controlled through the VMware VIX API.
  */
 public class VixConnectionProvider implements ConnectionProvider {
     public boolean acceptsUrl(String url) {
-        return false;  //To change body of implemented methods use File | Settings | File Templates.
+        return URL_PATTERN.matcher(url).matches();
     }
 
     public Connection connect(String url, String username, char[] password) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return null;
     }
+
+    private final static Pattern URL_PATTERN = Pattern.compile("vcc\\:vmware-vix\\:([^\\:\\;\\&]+)(:\\d+)?([\\;\\&][a-zA-Z][a-zA-Z0-9\\-\\_]*=[^\\;\\&]+)*");
 }
