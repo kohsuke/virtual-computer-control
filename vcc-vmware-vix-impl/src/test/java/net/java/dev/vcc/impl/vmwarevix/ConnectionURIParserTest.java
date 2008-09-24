@@ -15,4 +15,12 @@ public class ConnectionURIParserTest {
 
 
     }
+
+    @Test
+    public void parser() {
+        System.out.println(instance.parseUrl("vcc:vmware-vix:myhost.mydomain.com"));
+        System.out.println(instance.parseUrl("vcc:vmware-vix:myhost.mydomain.com;foo=bar"));
+        System.out.println(instance.parseUrl("vcc:vmware-vix:myhost.mydomain.com;foo=bar;bar=foo 1992&mush=cow"));
+        System.out.println(instance.parseUrl("vcc:vmware-vix:myhost.mydomain.com;foo=bar;bar=foo%20%211992&mush=cow"));
+    }
 }
