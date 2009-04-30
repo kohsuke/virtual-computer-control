@@ -1,1 +1,1 @@
-net.java.dev.vcc.impl.vmwarevix.VixConnectionProvider
+net.java.dev.vcc.impl.vmwarevix.VixDatacenterConnection
