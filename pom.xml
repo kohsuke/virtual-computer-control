@@ -32,6 +32,7 @@
 
     <modules>
         <module>vcc-parent</module>
+        <module>thirdparty</module>
         <module>vcc-api</module>
         <module>vcc-xen-impl</module>
         <module>vcc-xvm-impl</module>
